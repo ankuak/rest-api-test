@@ -38,3 +38,20 @@ Thank you very much for your time to take this test. Please upload this complete
 - If you are not comfortable with jsonschema2pojo plugin, you can create your own POJOs
 - *Validations & Idempotency check are not mandatory for 90 minutes online test. However, if you complete it then you would be getting extra points for that.
 
+## Sample Httprequest for Create and Get Booking Deatils
+For Create
+Endpoint: http:localhost:8080/v1/bfs/booking
+RequestHeader: key : idempotency-key |  Value: idempotency value
+Request body:
+   {"first_name": "AK", "last_name": "kumar", "date_of_birth": "1990-08-08", "check_in": "2021-08-08", "check_out": "2021-08-09", "total_price": "4353", "deposit": "34534", "address": { "line1":"line1 of address", "line2":"line1 of address", "city":"Bangalore", "state":"Karnataka", "country": "india", "zip_code": 560103 } }
+   
+For Get:
+Endpoint: http:localhost:8080/v1/bfs/booking
+
+   
+ 
+   
+ 
+
+
+
